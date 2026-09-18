@@ -24,8 +24,9 @@
 | [总架构](./architecture) | 目标与非目标、逻辑架构、与 BasicApp 的关系、门店模型、数据与部署、统配主链路、安全、分期 |
 | [模块边界](./modules) | 每个零售模块的职责、不负责什么、实体/单据、集成关系、工程落点 |
 | [WPF POS](./pos-wpf) | 为何 WPF、进程架构、本地库、离线边界、同步协议、外设抽象、终端认证 |
+| [上游同步](./upstream-sync) | 私有主库 origin、上游 upstream 远程约定，以及从 XiHan.BasicApp 同步框架的步骤 |
 
-阅读顺序：先 [总架构](./architecture) 对齐边界，再 [模块边界](./modules) 拆工程，收银与同步细节看 [WPF POS](./pos-wpf)。
+阅读顺序：先 [总架构](./architecture) 对齐边界，再 [模块边界](./modules) 拆工程，收银与同步细节看 [WPF POS](./pos-wpf)。仓库远程与上游合并见 [上游同步](./upstream-sync)。
 
 ## 分期路线（摘要）
 
@@ -54,13 +55,15 @@ MVP          主档 + 直营库存 + 在线收银 API + Vue 管理端最小闭�
 ## 仓库落点（规划，尚未建工程）
 
 ```text
-XiHan.BasicApp/
+XiHan.RetailERP/                  # 私有主库 dingzl2004/XiHan.RetailERP（非 GitHub Fork）
 ├── backend/src/modules/          # 新增 XiHan.BasicApp.Retail.* 一等模块
 ├── frontend/src/views/retail/    # Vue 管理端页面（不是收银界面）
 ├── frontend/src/api/modules/retail/
 ├── clients/pos-wpf/              # WPF 收银客户端（独立目录，理由见模块文档）
 └── docs/retail-erp/              # 本目录
 ```
+
+远程约定见 [上游同步](./upstream-sync)。
 
 ## 相关内核文档
 

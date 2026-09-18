@@ -124,6 +124,7 @@ const retailErpSidebar: DefaultTheme.SidebarItem[] = [
       { text: "总架构", link: "/retail-erp/architecture" },
       { text: "模块边界", link: "/retail-erp/modules" },
       { text: "WPF POS", link: "/retail-erp/pos-wpf" },
+      { text: "上游同步", link: "/retail-erp/upstream-sync" },
     ],
   },
 ];

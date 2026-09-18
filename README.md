@@ -1,3 +1,5 @@
+> **本仓库为私有连锁零售 ERP 主库**，底座同步自 [XiHanFun/XiHan.BasicApp](https://github.com/XiHanFun/XiHan.BasicApp)。远程约定与上游同步见 [docs/retail-erp/upstream-sync.md](./docs/retail-erp/upstream-sync.md)。
+
 <div align="center">
 
 <img src="./assets/banner.png" alt="XiHan.BasicApp" />
