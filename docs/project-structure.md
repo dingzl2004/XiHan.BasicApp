@@ -156,3 +156,4 @@ frontend/
 - [前端架构](./frontend/introduction)：五层结构与依赖方向
 - [二次开发](./backend/development)：新增功能的端到端清单
 - [配置参考](./configuration)：`appsettings` 全量
+- [连锁零售 ERP](./retail-erp/)：规划中的业务扩展（`Retail.*` 模块、`frontend/src/views/retail/`、`clients/pos-wpf/`）；**文档先行，业务代码尚未落地**，不要把 `backend/src/business` 空脚手架当成已交付 ERP

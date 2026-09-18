@@ -80,6 +80,7 @@ XiHan.BasicApp 是一个**企业级中后台内核**：后端基于 .NET 10 与 
 | **对接接口** | [接口对接指南](./api-guide)（含**怎么获取 token**） |
 | **运维部署** | [配置参考](./configuration) → [部署](./deployment) |
 | **排查问题** | [常见问题](./faq) → [请求生命周期](./backend/request-lifecycle#按现象定位) |
+| **零售 ERP 扩展** | [概述与分期](./retail-erp/) → [总架构](./retail-erp/architecture) → [模块边界](./retail-erp/modules) → [WPF POS](./retail-erp/pos-wpf) |
 
 ## 下一步
 
@@ -87,3 +88,4 @@ XiHan.BasicApp 是一个**企业级中后台内核**：后端基于 .NET 10 与 
 - [快速开始](./getting-started)：在本地把系统跑起来
 - [架构总览](./backend/introduction)：全景与五个架构分册的索引
 - [权限模型](./backend/permission)：RBAC + ABAC 与多租户隔离
+- [连锁零售 ERP](./retail-erp/)：在现有 Saas 底座上扩展千店直营/加盟统配与 WPF 离线收银（文档先行）
