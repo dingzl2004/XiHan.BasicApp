@@ -115,11 +115,26 @@ const frontendSidebar: DefaultTheme.SidebarItem[] = [
   },
 ];
 
+const retailErpSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: "连锁零售 ERP",
+    collapsed: false,
+    items: [
+      { text: "概述与分期", link: "/retail-erp/" },
+      { text: "总架构", link: "/retail-erp/architecture" },
+      { text: "模块边界", link: "/retail-erp/modules" },
+      { text: "WPF POS", link: "/retail-erp/pos-wpf" },
+    ],
+  },
+];
+
 // 每个顶部导航板块各自一份侧栏，由路径前缀决定用哪一份；
 // 首页是 layout: home，不落任何一份。
+// /retail-erp/ 必须写在 / 前面，否则会被开始页侧栏吃掉。
 const sidebar: DefaultTheme.Sidebar = {
   "/backend/": backendSidebar,
   "/frontend/": frontendSidebar,
+  "/retail-erp/": retailErpSidebar,
   "/": startSidebar,
 };
 
@@ -135,6 +150,11 @@ const nav: DefaultTheme.NavItem[] = [
     text: "前端手册",
     link: "/frontend/introduction",
     activeMatch: "/frontend/",
+  },
+  {
+    text: "零售 ERP",
+    link: "/retail-erp/",
+    activeMatch: "/retail-erp/",
   },
   {
     text: "探索未知",
