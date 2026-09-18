@@ -1,6 +1,6 @@
 # 连锁零售 ERP
 
-> 文档站路径 `/retail-erp/` 使用同目录 `index.md`（VitePress 目录索引约定）。两文件内容保持一致，GitHub 浏览本目录时以本 README 为入口。
+> GitHub 目录入口见同目录 [README.md](./README.md)。本页是文档站 `/retail-erp/` 的索引。
 
 本文档描述如何在 **现有 XiHan.BasicApp 前后端分离 monorepo** 上扩展一套连锁零售 ERP，而不是另起一套系统。Saas（身份、RBAC、组织、审计、多租户）继续作为底座；零售能力以独立业务模块接入 `WebHost`。
 
